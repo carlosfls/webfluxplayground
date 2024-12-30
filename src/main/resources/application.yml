@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: webfluxplayground
+
+  sql:
+    init:
+      data-locations:
+        - classpath:sql/data.sql
+
+sec: sec06
