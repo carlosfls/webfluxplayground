@@ -1,4 +1,4 @@
-package com.carlosacademic.webfluxplayground.sec06.repository;
+package com.carlosacademic.webfluxplayground.common.repository;
 
 import com.carlosacademic.webfluxplayground.common.entity.Customer;
 import org.springframework.data.domain.Pageable;

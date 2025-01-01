@@ -6,5 +6,5 @@ import org.springframework.boot.test.context.SpringBootTest;
         "sec=sec02",
         "logging.level.org.springframework.r2dbc=DEBUG"
 })
-public class AbstractTest {
+public class  AbstractTest {
 }

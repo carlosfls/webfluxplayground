@@ -2,7 +2,7 @@ package com.carlosacademic.webfluxplayground.common.services;
 
 import com.carlosacademic.webfluxplayground.common.dto.CustomerDTO;
 import com.carlosacademic.webfluxplayground.common.mapper.CustomerMapper;
-import com.carlosacademic.webfluxplayground.sec06.repository.CustomerRepository;
+import com.carlosacademic.webfluxplayground.common.repository.CustomerRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;

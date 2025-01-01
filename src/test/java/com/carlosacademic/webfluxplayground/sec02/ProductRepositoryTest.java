@@ -1,6 +1,6 @@
 package com.carlosacademic.webfluxplayground.sec02;
 
-import com.carlosacademic.webfluxplayground.sec02.repository.ProductRepository;
+import com.carlosacademic.webfluxplayground.common.repository.ProductRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
