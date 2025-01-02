@@ -1,12 +1,13 @@
 package com.carlosacademic.webfluxplayground.sec07;
 
+import com.carlosacademic.webfluxplayground.common.AbstractWebClientTest;
 import com.carlosacademic.webfluxplayground.sec01.Product;
 import org.junit.jupiter.api.Test;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 import reactor.test.StepVerifier;
 
-public class Lec03PostTest extends AbstractWebClientTest{
+public class Lec03PostTest extends AbstractWebClientTest {
 
     private final WebClient client = createDefaultWebClient();
 

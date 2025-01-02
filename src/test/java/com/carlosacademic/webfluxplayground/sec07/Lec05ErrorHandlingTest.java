@@ -1,5 +1,6 @@
 package com.carlosacademic.webfluxplayground.sec07;
 
+import com.carlosacademic.webfluxplayground.common.AbstractWebClientTest;
 import com.carlosacademic.webfluxplayground.common.dto.CalculatorResponseDTO;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
@@ -12,7 +13,7 @@ import org.springframework.web.reactive.function.client.WebClientResponseExcepti
 import reactor.core.publisher.Mono;
 import reactor.test.StepVerifier;
 
-public class Lec05ErrorHandlingTest extends AbstractWebClientTest{
+public class Lec05ErrorHandlingTest extends AbstractWebClientTest {
 
     private final WebClient client = createDefaultWebClient();
     private static final Logger logger = LoggerFactory.getLogger(Lec05ErrorHandlingTest.class);

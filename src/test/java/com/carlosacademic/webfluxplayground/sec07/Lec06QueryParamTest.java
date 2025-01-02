@@ -1,5 +1,6 @@
 package com.carlosacademic.webfluxplayground.sec07;
 
+import com.carlosacademic.webfluxplayground.common.AbstractWebClientTest;
 import com.carlosacademic.webfluxplayground.common.dto.CalculatorResponseDTO;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
@@ -9,7 +10,7 @@ import reactor.test.StepVerifier;
 
 import java.util.Map;
 
-public class Lec06QueryParamTest extends AbstractWebClientTest{
+public class Lec06QueryParamTest extends AbstractWebClientTest {
 
     private final WebClient client = createDefaultWebClient();
     private static final Logger logger = LoggerFactory.getLogger(Lec06QueryParamTest.class);

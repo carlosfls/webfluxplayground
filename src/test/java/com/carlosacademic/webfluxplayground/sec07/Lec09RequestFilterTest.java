@@ -1,5 +1,6 @@
 package com.carlosacademic.webfluxplayground.sec07;
 
+import com.carlosacademic.webfluxplayground.common.AbstractWebClientTest;
 import com.carlosacademic.webfluxplayground.sec01.Product;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
@@ -11,7 +12,7 @@ import reactor.test.StepVerifier;
 
 import java.util.UUID;
 
-public class Lec09RequestFilterTest extends AbstractWebClientTest{
+public class Lec09RequestFilterTest extends AbstractWebClientTest {
 
     private final WebClient client = createWebClient(b -> b.filter(tokenGenerator())
                                                             .filter(requestLogger()));
@@ -20,7 +21,7 @@ public class Lec09RequestFilterTest extends AbstractWebClientTest{
     @Test
     void exchangeFilter() {
         client.get()
-                .uri("/lec09/product/{id}", 1)
+                .uri("/demo02/lec09/product/{id}", 1)
                 .attribute("enable-logging", true) //pasando atributos a un filtro
                 .retrieve()
                 .bodyToMono(Product .class)
